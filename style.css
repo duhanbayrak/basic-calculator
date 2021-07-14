@@ -1,0 +1,107 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background: #2C2E43;
+    
+
+}
+.container{
+    width: 404px;
+    height: 600px;
+    background-color:#2C2E43;
+    margin: 0 auto;
+    padding-top: 20px;
+    margin-top:10%;
+    border: 1px solid #4C4C6D;
+    border-radius: 5px;
+    font-family: "Montserrat", sans-serif;
+
+    
+}
+
+#result{
+    width: 400px;
+    height: 5rem;
+    overflow: hidden; 
+    border-bottom: 1px solid #54436B;
+}
+
+#resultInner{
+    width: 400px;
+    height: 5rem;
+    border: 0px solid #2C2E43;
+    margin-top: 5px;
+    padding-right: 30px;
+    text-align: end;
+    background: transparent;
+    font-size: 4rem;
+    color: #71EFA3;
+    outline: none;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #71EFA3;
+    opacity: 1; /* Firefox */
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: 100px;
+}  
+.numbers{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 300px;
+    height: 400px;
+    background-color: transparent; 
+}
+
+.number , .operator{
+    width: 100px;
+    height: 100px;
+    border-style: none;
+    color: #71EFA3;
+    font-size: 2.5rem;
+    background: transparent;
+    cursor: pointer;
+}
+.number:hover , .operator:hover , #equation:hover , #remove:hover{
+    color: #50CB93 ;
+    
+}
+.number:active , .operator:active, #equation:active ,#remove:active{
+   
+    transform: translateY(4px);
+}
+
+#num0{
+    width: 200px;
+}
+
+.operators{
+    width: 100px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    float: right;
+    background: transparent;
+}
+
+#equation , #remove{
+    width: 100px;
+    height: 100px;
+    background: transparent;
+    border-style: none;
+    color: #71EFA3;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+#remove{
+    float: right;
+}
+
